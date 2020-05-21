@@ -1,0 +1,838 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Transformation version="1.06">
+  <Rules>
+    <Rule name="ШАПКА" id="0c2172da-de85-4f48-8a60-8ba53640842d" independed="True">
+      <DataSource id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx[CMR-ФОРМ]!A1:BI2">
+        <CustomSettings>
+          <EOFCriteria>EndOfRange</EOFCriteria>
+          <FirstRecordIsHeader>True</FirstRecordIsHeader>
+          <ExcelRangeCustomSettings>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfInt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;int&gt;3&lt;/int&gt;
+  &lt;int&gt;4&lt;/int&gt;
+  &lt;int&gt;5&lt;/int&gt;
+  &lt;int&gt;6&lt;/int&gt;
+  &lt;int&gt;7&lt;/int&gt;
+  &lt;int&gt;8&lt;/int&gt;
+  &lt;int&gt;9&lt;/int&gt;
+  &lt;int&gt;10&lt;/int&gt;
+  &lt;int&gt;11&lt;/int&gt;
+  &lt;int&gt;12&lt;/int&gt;
+  &lt;int&gt;13&lt;/int&gt;
+  &lt;int&gt;14&lt;/int&gt;
+  &lt;int&gt;15&lt;/int&gt;
+  &lt;int&gt;16&lt;/int&gt;
+  &lt;int&gt;17&lt;/int&gt;
+  &lt;int&gt;18&lt;/int&gt;
+  &lt;int&gt;19&lt;/int&gt;
+  &lt;int&gt;20&lt;/int&gt;
+  &lt;int&gt;21&lt;/int&gt;
+  &lt;int&gt;22&lt;/int&gt;
+  &lt;int&gt;23&lt;/int&gt;
+  &lt;int&gt;24&lt;/int&gt;
+  &lt;int&gt;25&lt;/int&gt;
+  &lt;int&gt;26&lt;/int&gt;
+  &lt;int&gt;27&lt;/int&gt;
+  &lt;int&gt;28&lt;/int&gt;
+  &lt;int&gt;29&lt;/int&gt;
+  &lt;int&gt;30&lt;/int&gt;
+  &lt;int&gt;31&lt;/int&gt;
+  &lt;int&gt;32&lt;/int&gt;
+  &lt;int&gt;33&lt;/int&gt;
+  &lt;int&gt;34&lt;/int&gt;
+  &lt;int&gt;35&lt;/int&gt;
+  &lt;int&gt;36&lt;/int&gt;
+  &lt;int&gt;37&lt;/int&gt;
+  &lt;int&gt;38&lt;/int&gt;
+  &lt;int&gt;39&lt;/int&gt;
+  &lt;int&gt;40&lt;/int&gt;
+  &lt;int&gt;41&lt;/int&gt;
+  &lt;int&gt;42&lt;/int&gt;
+  &lt;int&gt;43&lt;/int&gt;
+  &lt;int&gt;44&lt;/int&gt;
+  &lt;int&gt;45&lt;/int&gt;
+  &lt;int&gt;46&lt;/int&gt;
+  &lt;int&gt;47&lt;/int&gt;
+  &lt;int&gt;48&lt;/int&gt;
+  &lt;int&gt;49&lt;/int&gt;
+  &lt;int&gt;50&lt;/int&gt;
+  &lt;int&gt;51&lt;/int&gt;
+  &lt;int&gt;52&lt;/int&gt;
+  &lt;int&gt;53&lt;/int&gt;
+  &lt;int&gt;54&lt;/int&gt;
+  &lt;int&gt;55&lt;/int&gt;
+  &lt;int&gt;56&lt;/int&gt;
+  &lt;int&gt;57&lt;/int&gt;
+  &lt;int&gt;58&lt;/int&gt;
+  &lt;int&gt;59&lt;/int&gt;
+  &lt;int&gt;60&lt;/int&gt;
+&lt;/ArrayOfInt&gt;</ExcelRangeCustomSettings>
+        </CustomSettings>
+        <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+      </DataSource>
+      <Rule name="Номер строки" id="32226086-ba08-492b-b770-a948d53a00d4" independed="False">
+        <DataSource id="rowNumber">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Код языка документа:" id="97db1b7d-e941-4955-9938-da0cff58e8d5" independed="False">
+        <DataSource id="0">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="КОЛ_во груз.мест: GoodsQuantity" id="4a4abeff-6d81-4aa7-8e7c-71c6ed9e5e15" independed="False">
+        <DataSource id="1">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Объявленная стоимость груза: GoodsCost" id="6ecfd723-a793-418f-a605-a3d47934056d" independed="False">
+        <DataSource id="2">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Дата CMR: RegDate" id="a3b45d92-adaa-4fb2-ad13-401d03b8bef4" independed="False">
+        <DataSource id="3">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Номер CMR: RegNum" id="a7eb1d52-44a5-4d37-92f1-8ed38437bd9e" independed="False">
+        <DataSource id="4">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Место составления: Place" id="6ab04b09-16e4-487e-8889-09c8e6bb26a1" independed="False">
+        <DataSource id="5">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Отправитель: Consignor_Name" id="9c045809-cd57-45c8-94a1-42f1344baf86" independed="False">
+        <DataSource id="6">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Отправитель: Consignor_CountryCode" id="d6894ac9-68d4-4264-b438-f5888e3b0967" independed="False">
+        <DataSource id="7">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Отправитель: Consignor_CountryName" id="c8ec5760-92c7-40e3-95a5-922daa81551a" independed="False">
+        <DataSource id="8">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Отправитель: Consignor_Region" id="454f455c-f12c-4245-8581-0aa11f804f79" independed="False">
+        <DataSource id="9">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Отправитель: Consignor_City" id="55e379e1-58bd-4c98-93b0-6c6e9c433b4e" independed="False">
+        <DataSource id="10">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Отправитель: Consignor_Street" id="0840a748-b103-4eba-a76c-718f1f6e7d96" independed="False">
+        <DataSource id="11">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Получатель: Consignee_name" id="c01f76df-ba02-45e9-bb25-2d3126b54152" independed="False">
+        <DataSource id="12">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Consignee_ИНН" id="4131785b-0cf2-4709-84c6-1befda7f66bb" independed="False">
+        <DataSource id="13">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Consignee_КПП" id="bb4c5b57-50ba-4f27-a273-a8beb56e8873" independed="False">
+        <DataSource id="14">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Consignee_PostalCode" id="332709b9-fc72-46a4-aad6-bfeb86120e75" independed="False">
+        <DataSource id="15">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Consignee_CountryCode" id="17675197-f89c-40cd-81fa-99dabb4a59fd" independed="False">
+        <DataSource id="16">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Consignee_ CountryName" id="887e24af-06cf-4fa8-860c-00c59c6ce41a" independed="False">
+        <DataSource id="17">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Consignee_region" id="43f32d6d-8f60-4a9d-b50f-424db4167a9b" independed="False">
+        <DataSource id="18">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Consignee_City" id="abd2ab6c-4b7c-48d9-99e0-640b4239aa8b" independed="False">
+        <DataSource id="19">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Consignee_Street" id="ab0d341d-dae7-423c-874f-e808a15720e4" independed="False">
+        <DataSource id="20">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Перевозчик: Carrier_name" id="a147748a-8498-453f-94ac-cfb3aabe696b" independed="False">
+        <DataSource id="21">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Carrier_ИНН" id="082f4ce9-3e21-4e69-90f0-b68f930a4e50" independed="False">
+        <DataSource id="22">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Carrier_PostalCode" id="e6704eac-64ac-4846-a334-87d2a16dea35" independed="False">
+        <DataSource id="23">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Carrier_CountryCode" id="1ae09c2b-e981-4ee8-a17c-b0027fd5285a" independed="False">
+        <DataSource id="24">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Carrier_ CountryName" id="2804dbc3-a28d-4831-abea-6e56c4ac543b" independed="False">
+        <DataSource id="25">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Carrier_region" id="167390bc-2f64-450f-9fee-2e7b495a43ff" independed="False">
+        <DataSource id="26">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Carrier_City" id="5bc67da0-0172-4219-9fcb-1d5256774758" independed="False">
+        <DataSource id="27">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Carrier_Street" id="d01ac96f-d1a9-4145-a9f1-1cf064e6b40a" independed="False">
+        <DataSource id="28">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Carrier_LicenseID" id="dee7f76e-d0ca-44a7-8dc9-a40376ae4d0e" independed="False">
+        <DataSource id="29">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Место доставки: DeliveryPlace_PostalCode" id="082873a0-dc40-46a5-a7ae-83ef26785bd1" independed="False">
+        <DataSource id="30">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="DeliveryPlace_CountryCode" id="8f3214b7-ffdd-45f1-bc26-6ca6da31fcb6" independed="False">
+        <DataSource id="31">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="DeliveryPlace_ CountryName" id="b50f9fb8-c241-4338-97d2-b63c8c1f5006" independed="False">
+        <DataSource id="32">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="DeliveryPlace_region" id="200742ba-4475-4c34-bf04-ffba2bb0a742" independed="False">
+        <DataSource id="33">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="DeliveryPlace_City" id="7b7b4cd6-ba32-4763-963d-23a78432203f" independed="False">
+        <DataSource id="34">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="DeliveryPlace_Street" id="c460f7d9-3cb6-4c92-b40c-72e7126ff0b3" independed="False">
+        <DataSource id="35">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Общий вес (КОД)" id="f0437e3b-1f86-47b7-8db9-fab026607ad2" independed="False">
+        <DataSource id="36">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Общий вес - количество, кг (GrossWeightQuantity)" id="f6c0d6eb-055f-4143-8d17-5f22c4dfa29e" independed="False">
+        <DataSource id="37">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Таможенный орган получателя:" id="c2016fba-b1cf-4f25-8502-fcbcd220067d" independed="False">
+        <DataSource id="38">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Название СВХ" id="b0718301-c6b1-4304-9dc9-3e6c7f3b9d3e" independed="False">
+        <DataSource id="39">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Код таможенного органа получателя:" id="0f21d4c7-8fa9-4234-a4e5-959d024d60ab" independed="False">
+        <DataSource id="40">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Свидетельство о включении в реестр СВХ" id="2af52eef-e265-4274-99fc-c2b48c254e9d" independed="False">
+        <DataSource id="41">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Дата свидетельства о включении в реестр СВХ" id="db2a4a8f-5644-4bbf-bf4e-2fb52c2122f7" independed="False">
+        <DataSource id="42">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="СВХ: почт.индекс (SVH_PostalCode)" id="56f4c347-c4de-4758-8ef5-b1cbfad00472" independed="False">
+        <DataSource id="43">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="SVH_CountryCode" id="bdc2b165-04c1-4fc8-bab2-6d53b89b3508" independed="False">
+        <DataSource id="44">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="SVH_ CountryName" id="08d2c4d5-706d-4fd1-93a0-bf99527c979a" independed="False">
+        <DataSource id="45">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="SVH_region" id="ee9bf6df-1744-4880-b091-3fadbab76af0" independed="False">
+        <DataSource id="46">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="SVH_City" id="01d3ce1c-6e32-4589-a9be-9706eb43be31" independed="False">
+        <DataSource id="47">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="SVH_Street" id="90928887-1e49-42f7-863f-26fcc12d124c" independed="False">
+        <DataSource id="48">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Пункт поставки: Delivery_Place" id="0f98e515-533e-4104-afec-2f3a5ba7e932" independed="False">
+        <DataSource id="49">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="КОД УСЛОВИЙ ПОСТАВКИ буквы" id="ac46cc67-786b-4eb0-b706-8b44b72c7252" independed="False">
+        <DataSource id="50">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="РЕГ.№ ТЯГАЧА" id="f7525949-8ee3-449e-a4c4-21ac737dbd66" independed="False">
+        <DataSource id="51">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="РЕГ.№ П/ПРИЦЕПА" id="6dbbbed0-ee56-4d85-b673-b42ae33773ed" independed="False">
+        <DataSource id="52">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="ДАТА ПРИНЯТИЯ ГРУЗА К ПЕРЕВОЗКЕ" id="edb8f36f-3efc-4a0c-8ecd-7696ed6563ed" independed="False">
+        <DataSource id="53">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Место принятия груза: страна (TakingCARGOplace_CountryCode)" id="de3905a7-3e4c-414d-b863-fe914e65b9b3" independed="False">
+        <DataSource id="54">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="TakingCARGOplace_ CountryName" id="0e07af72-ef6c-468f-bacd-24d21235e64f" independed="False">
+        <DataSource id="55">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="TakingCARGOplace_region" id="5f9dd352-e2db-4da8-a1cd-c6164bad5475" independed="False">
+        <DataSource id="56">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="TakingCARGOplace_City" id="709b190c-1f48-414e-a595-e7a097ada53e" independed="False">
+        <DataSource id="57">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Стоимость услуг по перевозке" id="1d70dd69-7821-4dd9-a0e6-a02fbdab4be2" independed="False">
+        <DataSource id="58">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Общая сумма расходов" id="68731a1d-c8d4-4b1b-a386-f0fbbe02deef" independed="False">
+        <DataSource id="59">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="ШТАМП (0-ПТД, 1-прямая)" id="0f6ddb7f-8f5d-4de8-aa6f-e0cf5f9ab683" independed="False">
+        <DataSource id="60">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+    </Rule>
+    <Rule name="ДОКИ" id="3e4b4ff9-94e7-44a0-9a4e-ac49e5467b95" independed="True">
+      <DataSource id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx[CMR-ФОРМ]!A6:D9">
+        <CustomSettings>
+          <EOFCriteria>EndOfRange</EOFCriteria>
+          <FirstRecordIsHeader>True</FirstRecordIsHeader>
+          <ExcelRangeCustomSettings>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfInt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;int&gt;3&lt;/int&gt;
+&lt;/ArrayOfInt&gt;</ExcelRangeCustomSettings>
+        </CustomSettings>
+        <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+      </DataSource>
+      <Rule name="Номер строки" id="185a391c-e8fe-493c-bc36-b5b5de311b1b" independed="False">
+        <DataSource id="rowNumber">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Наим.документа: Doc_Name" id="5937e333-2ec3-4001-8006-c037f3de102f" independed="False">
+        <DataSource id="0">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="№ документа: DocNum" id="6e5a1e04-e7ad-4781-945f-62d7ba2f741a" independed="False">
+        <DataSource id="1">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Дата документа: DocDate" id="de641f2f-77c0-4ef0-880d-fd0fb4c83741" independed="False">
+        <DataSource id="2">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Вид документа: ModeCode" id="c0928677-4d3b-45bf-99ec-a960db9b7265" independed="False">
+        <DataSource id="3">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+    </Rule>
+    <Rule name="ТОВАРЫ" id="8d4e49d5-c2ec-4eeb-bb2e-65c36f052522" independed="True">
+      <DataSource id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx[CMR-ФОРМ]!B18:F33">
+        <CustomSettings>
+          <EOFCriteria>EndOfRange</EOFCriteria>
+          <FirstRecordIsHeader>True</FirstRecordIsHeader>
+          <ExcelRangeCustomSettings>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfInt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;int&gt;3&lt;/int&gt;
+  &lt;int&gt;4&lt;/int&gt;
+&lt;/ArrayOfInt&gt;</ExcelRangeCustomSettings>
+        </CustomSettings>
+        <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+      </DataSource>
+      <Rule name="Номер строки" id="935ed08e-b851-4d1a-95d5-40316c1751b3" independed="False">
+        <DataSource id="rowNumber">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Описание: Good_Desсiption" id="2e0c96ec-f7e0-40e2-b4cd-22b8c0c6c54b" independed="False">
+        <DataSource id="0">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Порядковый номер: GoodsNumeric" id="3a14a23d-58a7-4cb3-8df7-25cdfdbd3154" independed="False">
+        <DataSource id="1">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Код ТНВЭД" id="26a8fcea-6b0c-42bc-858e-77aee7fd8bf4" independed="False">
+        <DataSource id="2">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Кол-во упакованного груза: Goods_Qty" id="13981dbf-fa97-4992-8f19-520f09c06280" independed="False">
+        <DataSource id="3">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Вес брутто Gross" id="26197aab-4902-42ee-88ac-74415c046590" independed="False">
+        <DataSource id="4">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+    </Rule>
+    <Rule name="МЕСТА" id="064f64f6-c76a-421c-aab6-95dfa8685776" independed="True">
+      <DataSource id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx[CMR-ФОРМ]!B12:E13">
+        <CustomSettings>
+          <EOFCriteria>EndOfRange</EOFCriteria>
+          <FirstRecordIsHeader>True</FirstRecordIsHeader>
+          <ExcelRangeCustomSettings>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfInt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;int&gt;3&lt;/int&gt;
+&lt;/ArrayOfInt&gt;</ExcelRangeCustomSettings>
+        </CustomSettings>
+        <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+      </DataSource>
+      <Rule name="Номер строки" id="01ee7989-ec6d-4e40-97eb-492a3acb4b02" independed="False">
+        <DataSource id="rowNumber">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Код вида упаковки: PackingCode" id="7bdbee90-4a1d-4b95-b9c1-c05155f00084" independed="False">
+        <DataSource id="0">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Количество упаковок: Packing_Qty" id="e2e93208-5e94-4639-ab4a-e6322a1e43ba" independed="False">
+        <DataSource id="1">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Описание грузовых мест" id="28289eb9-87d9-4bfc-b9bc-7ac61506d868" independed="False">
+        <DataSource id="2">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+      <Rule name="Частично занятые места" id="3b68b284-539e-43b7-862f-382665085ad3" independed="False">
+        <DataSource id="3">
+          <Document module="Excel" id="M:\ФОРМАЛИЗАЦИЯ\CMR\ФОРМАЛИЗАЦИЯ CMR-AFFINE.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+      </Rule>
+    </Rule>
+  </Rules>
+  <BindingLayout>
+    <Document module="ConvFrmlDocs.clsConvFormalizedDocs" id="CMR.CFG.XML">
+      <BoundTo id="/CMR">
+        <RulesRow>
+          <RuleGuid>0c2172da-de85-4f48-8a60-8ba53640842d</RuleGuid>
+        </RulesRow>
+      </BoundTo>
+      <BoundTo id="/CMR/LanguageCode">
+        <RuleGuid>97db1b7d-e941-4955-9938-da0cff58e8d5</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/GoodsQuantity">
+        <RuleGuid>4a4abeff-6d81-4aa7-8e7c-71c6ed9e5e15</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/GoodsCost">
+        <RuleGuid>6ecfd723-a793-418f-a605-a3d47934056d</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/RegDate">
+        <RuleGuid>a3b45d92-adaa-4fb2-ad13-401d03b8bef4</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/RegNum">
+        <RuleGuid>a7eb1d52-44a5-4d37-92f1-8ed38437bd9e</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Place">
+        <RuleGuid>6ab04b09-16e4-487e-8889-09c8e6bb26a1</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Consignor_Name">
+        <RuleGuid>9c045809-cd57-45c8-94a1-42f1344baf86</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Consignor_CountryCode">
+        <RuleGuid>d6894ac9-68d4-4264-b438-f5888e3b0967</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Consignor_CountryName">
+        <RuleGuid>c8ec5760-92c7-40e3-95a5-922daa81551a</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Consignor_Region">
+        <RuleGuid>454f455c-f12c-4245-8581-0aa11f804f79</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Consignor_City">
+        <RuleGuid>55e379e1-58bd-4c98-93b0-6c6e9c433b4e</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Consignor_StreetHouse">
+        <RuleGuid>0840a748-b103-4eba-a76c-718f1f6e7d96</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Consignee_Name">
+        <RuleGuid>c01f76df-ba02-45e9-bb25-2d3126b54152</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Consignee_INN">
+        <RuleGuid>4131785b-0cf2-4709-84c6-1befda7f66bb</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Consignee_KPP">
+        <RuleGuid>bb4c5b57-50ba-4f27-a273-a8beb56e8873</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Consignee_PostalCode">
+        <RuleGuid>332709b9-fc72-46a4-aad6-bfeb86120e75</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Consignee_CountryCode">
+        <RuleGuid>17675197-f89c-40cd-81fa-99dabb4a59fd</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Consignee_CountryName">
+        <RuleGuid>887e24af-06cf-4fa8-860c-00c59c6ce41a</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Consignee_Region">
+        <RuleGuid>43f32d6d-8f60-4a9d-b50f-424db4167a9b</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Consignee_City">
+        <RuleGuid>abd2ab6c-4b7c-48d9-99e0-640b4239aa8b</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Consignee_StreetHouse">
+        <RuleGuid>ab0d341d-dae7-423c-874f-e808a15720e4</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Carrier_Name">
+        <RuleGuid>a147748a-8498-453f-94ac-cfb3aabe696b</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Carrier_INN">
+        <RuleGuid>082f4ce9-3e21-4e69-90f0-b68f930a4e50</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Carrier_PostalCode">
+        <RuleGuid>e6704eac-64ac-4846-a334-87d2a16dea35</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Carrier_CountryCode">
+        <RuleGuid>1ae09c2b-e981-4ee8-a17c-b0027fd5285a</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Carrier_CountryName">
+        <RuleGuid>2804dbc3-a28d-4831-abea-6e56c4ac543b</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Carrier_Region">
+        <RuleGuid>167390bc-2f64-450f-9fee-2e7b495a43ff</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Carrier_City">
+        <RuleGuid>5bc67da0-0172-4219-9fcb-1d5256774758</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Carrier_StreetHouse">
+        <RuleGuid>d01ac96f-d1a9-4145-a9f1-1cf064e6b40a</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Carrier_LicenseID">
+        <RuleGuid>dee7f76e-d0ca-44a7-8dc9-a40376ae4d0e</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/DeliveryPlace_PostalCode">
+        <RuleGuid>082873a0-dc40-46a5-a7ae-83ef26785bd1</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/DeliveryPlace_CountryCode">
+        <RuleGuid>8f3214b7-ffdd-45f1-bc26-6ca6da31fcb6</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/DeliveryPlace_CountryName">
+        <RuleGuid>b50f9fb8-c241-4338-97d2-b63c8c1f5006</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/DeliveryPlace_Region">
+        <RuleGuid>200742ba-4475-4c34-bf04-ffba2bb0a742</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/DeliveryPlace_City">
+        <RuleGuid>7b7b4cd6-ba32-4763-963d-23a78432203f</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/DeliveryPlace_StreetHouse">
+        <RuleGuid>c460f7d9-3cb6-4c92-b40c-72e7126ff0b3</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/CMREnclosedDocument">
+        <RulesRow>
+          <RuleGuid>3e4b4ff9-94e7-44a0-9a4e-ac49e5467b95</RuleGuid>
+        </RulesRow>
+      </BoundTo>
+      <BoundTo id="/CMR/CMREnclosedDocument/DocumentName">
+        <RuleGuid>5937e333-2ec3-4001-8006-c037f3de102f</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/CMREnclosedDocument/DocumentNumber">
+        <RuleGuid>6e5a1e04-e7ad-4781-945f-62d7ba2f741a</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/CMREnclosedDocument/DocumentDate">
+        <RuleGuid>de641f2f-77c0-4ef0-880d-fd0fb4c83741</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/CMREnclosedDocument/ModeCode">
+        <RuleGuid>c0928677-4d3b-45bf-99ec-a960db9b7265</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/CMRGoods">
+        <RulesRow>
+          <RuleGuid>8d4e49d5-c2ec-4eeb-bb2e-65c36f052522</RuleGuid>
+        </RulesRow>
+      </BoundTo>
+      <BoundTo id="/CMR/CMRGoods/GoodsDescription">
+        <RuleGuid>2e0c96ec-f7e0-40e2-b4cd-22b8c0c6c54b</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/CMRGoods/GoodsNumeric">
+        <RuleGuid>3a14a23d-58a7-4cb3-8df7-25cdfdbd3154</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/CMRGoods/GoodsNomenclatureCode">
+        <RuleGuid>26a8fcea-6b0c-42bc-858e-77aee7fd8bf4</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/CMRGoods/GoodsQuantity">
+        <RuleGuid>13981dbf-fa97-4992-8f19-520f09c06280</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/CMRGoods/GrossWeightQuantity">
+        <RuleGuid>26197aab-4902-42ee-88ac-74415c046590</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/CMRGoods/CMRGoodsPackingInfo">
+        <RulesRow>
+          <RuleGuid>064f64f6-c76a-421c-aab6-95dfa8685776</RuleGuid>
+        </RulesRow>
+      </BoundTo>
+      <BoundTo id="/CMR/CMRGoods/CMRGoodsPackingInfo/PackingCode">
+        <RuleGuid>7bdbee90-4a1d-4b95-b9c1-c05155f00084</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/CMRGoods/CMRGoodsPackingInfo/PackingQuantity">
+        <RuleGuid>e2e93208-5e94-4639-ab4a-e6322a1e43ba</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/CMRGoods/CMRGoodsPackingInfo/PackingDescription">
+        <RuleGuid>28289eb9-87d9-4bfc-b9bc-7ac61506d868</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/CMRGoods/CMRGoodsPackingInfo/PackingPartQuantity">
+        <RuleGuid>3b68b284-539e-43b7-862f-382665085ad3</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/PreferSuppUnits">
+        <RuleGuid>f0437e3b-1f86-47b7-8db9-fab026607ad2</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/GrossWeightQuantity">
+        <RuleGuid>f6c0d6eb-055f-4143-8d17-5f22c4dfa29e</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/DestinationOfficeName">
+        <RuleGuid>c2016fba-b1cf-4f25-8502-fcbcd220067d</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/WarehouseName">
+        <RuleGuid>b0718301-c6b1-4304-9dc9-3e6c7f3b9d3e</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/DestinationOfficeIdentifier">
+        <RuleGuid>0f21d4c7-8fa9-4234-a4e5-959d024d60ab</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/WarehouseLicenceID">
+        <RuleGuid>2af52eef-e265-4274-99fc-c2b48c254e9d</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/WarehouseLicenceDate">
+        <RuleGuid>db2a4a8f-5644-4bbf-bf4e-2fb52c2122f7</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Warehouse_PostalCode">
+        <RuleGuid>56f4c347-c4de-4758-8ef5-b1cbfad00472</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Warehouse_CountryCode">
+        <RuleGuid>bdc2b165-04c1-4fc8-bab2-6d53b89b3508</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Warehouse_CountryName">
+        <RuleGuid>08d2c4d5-706d-4fd1-93a0-bf99527c979a</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Warehouse_Region">
+        <RuleGuid>ee9bf6df-1744-4880-b091-3fadbab76af0</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Warehouse_City">
+        <RuleGuid>01d3ce1c-6e32-4589-a9be-9706eb43be31</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/Warehouse_StreetHouse">
+        <RuleGuid>90928887-1e49-42f7-863f-26fcc12d124c</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/DeliveryPlace">
+        <RuleGuid>0f98e515-533e-4104-afec-2f3a5ba7e932</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/DeliveryTermsStringCode">
+        <RuleGuid>ac46cc67-786b-4eb0-b706-8b44b72c7252</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/PrimeMoverStateSignID">
+        <RuleGuid>f7525949-8ee3-449e-a4c4-21ac737dbd66</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/TrailerStateSignID">
+        <RuleGuid>6dbbbed0-ee56-4d85-b673-b42ae33773ed</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/TakingCargoDate">
+        <RuleGuid>edb8f36f-3efc-4a0c-8ecd-7696ed6563ed</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/TakingCargoPlace_CountryCode">
+        <RuleGuid>de3905a7-3e4c-414d-b863-fe914e65b9b3</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/TakingCargoPlace_CountryName">
+        <RuleGuid>0e07af72-ef6c-468f-bacd-24d21235e64f</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/TakingCargoPlace_Region">
+        <RuleGuid>5f9dd352-e2db-4da8-a1cd-c6164bad5475</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/TakingCargoPlace_City">
+        <RuleGuid>709b190c-1f48-414e-a595-e7a097ada53e</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/TransportCost">
+        <RuleGuid>1d70dd69-7821-4dd9-a0e6-a02fbdab4be2</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/CMR/TotalCost">
+        <RuleGuid>68731a1d-c8d4-4b1b-a386-f0fbbe02deef</RuleGuid>
+      </BoundTo>
+    </Document>
+  </BindingLayout>
+</Transformation>

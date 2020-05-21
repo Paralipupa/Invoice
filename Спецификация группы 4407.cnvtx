@@ -1,0 +1,263 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Transformation version="1.10">
+  <Rules hideUnbinded="False">
+    <Rule name="B10:K19" id="9f057ffa-7ebd-42b1-931e-c8a0c00c179f" independed="True">
+      <DataSource id="D:\chip\Mail.Cloud\Common\Invoice\Пиломатериалы.xlsx[Спецификация]!B10:K19">
+        <CustomSettings>
+          <EOFCriteria>EndOfRange</EOFCriteria>
+<FirstRecordIsHeader>true</FirstRecordIsHeader>
+<FirstRecordValues>
+  <Value>номер товара</Value>
+  <Value>номер группы</Value>
+  <Value>толщина
+мм</Value>
+  <Value>ширина
+мм</Value>
+  <Value>длина
+м</Value>
+  <Value>Кол-во, шт</Value>
+  <Value>Обьем, м3</Value>
+  <Value>Сорт</Value>
+  <Value>Пакет</Value>
+  <Value>Порода</Value>
+</FirstRecordValues>
+<RecordsNumberToTransfer>1</RecordsNumberToTransfer>
+<ExcelRangeCustomSettings>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfInt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;int&gt;3&lt;/int&gt;
+  &lt;int&gt;4&lt;/int&gt;
+  &lt;int&gt;5&lt;/int&gt;
+  &lt;int&gt;6&lt;/int&gt;
+  &lt;int&gt;7&lt;/int&gt;
+  &lt;int&gt;8&lt;/int&gt;
+  &lt;int&gt;9&lt;/int&gt;
+&lt;/ArrayOfInt&gt;</ExcelRangeCustomSettings>
+</CustomSettings>
+        <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Пиломатериалы.xlsx" />
+      </DataSource>
+      <Rule name="Номер строки" id="80243046-f02c-44d2-8e95-f90be5c96075" independed="False">
+        <DataSource id="rowNumber">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Пиломатериалы.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="номер товара" id="fd19c038-2be7-46db-a124-1067d9a67ee8" independed="False">
+        <DataSource id="0">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Пиломатериалы.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="номер группы" id="85164d99-bd14-47bd-a9d4-89897152691a" independed="False">
+        <DataSource id="1">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Пиломатериалы.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="толщина&#xA;мм" id="412fa305-b738-44e1-be4b-e4a1a92bd72c" independed="False">
+        <DataSource id="2">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Пиломатериалы.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Ширина x Толщина" id="fb039b41-b88b-4926-bcb4-9a277867c16e" independed="True">
+        <DataSource id="Встроенные\Математические функции\Ctm_Mul">
+          <CustomSettings>
+            <Script>
+              <InputParams>
+                <Param name="inpnum1" value="412fa305-b738-44e1-be4b-e4a1a92bd72c" valueIsGuid="True" />
+                <Param name="inpnum2" value="aac5a3b7-0317-4b0a-864f-ad31f8c1644f" valueIsGuid="True" />
+                <Param name="fraction" value="3" valueIsGuid="False" />
+              </InputParams>
+            </Script>
+          </CustomSettings>
+          <Document module="Script" id="Built-in" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="х Длина" id="b4ebe2ba-27f1-4701-b4bd-4c8cdb317831" independed="True">
+        <DataSource id="Встроенные\Математические функции\Ctm_Mul">
+          <CustomSettings>
+            <Script>
+              <InputParams>
+                <Param name="inpnum1" value="fb039b41-b88b-4926-bcb4-9a277867c16e" valueIsGuid="True" />
+                <Param name="inpnum2" value="4f21399b-1a9e-4b39-8764-eac23d3dc229" valueIsGuid="True" />
+                <Param name="fraction" value="3" valueIsGuid="False" />
+              </InputParams>
+            </Script>
+          </CustomSettings>
+          <Document module="Script" id="Built-in" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="объем вычисляемый" id="436ab71c-2159-45b6-aaa5-2843b77c8f96" independed="True">
+        <DataSource id="Встроенные\Математические функции\Ctm_Div">
+          <CustomSettings>
+            <Script>
+              <InputParams>
+                <Param name="inpnum1" value="6621106b-5711-4cd7-b8ec-e9c56f90c3b4" valueIsGuid="True" />
+                <Param name="inpnum2" value="1000000" valueIsGuid="False" />
+                <Param name="fraction" value="" valueIsGuid="False" />
+              </InputParams>
+            </Script>
+          </CustomSettings>
+          <Document module="Script" id="Built-in" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="х Количество" id="6621106b-5711-4cd7-b8ec-e9c56f90c3b4" independed="True">
+        <DataSource id="Встроенные\Математические функции\Ctm_Mul">
+          <CustomSettings>
+            <Script>
+              <InputParams>
+                <Param name="inpnum1" value="b4ebe2ba-27f1-4701-b4bd-4c8cdb317831" valueIsGuid="True" />
+                <Param name="inpnum2" value="fbed04f5-86ba-4170-a6f0-69b7c1c7378d" valueIsGuid="True" />
+                <Param name="fraction" value="" valueIsGuid="False" />
+              </InputParams>
+            </Script>
+          </CustomSettings>
+          <Document module="Script" id="Built-in" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="ширина&#xA;мм" id="aac5a3b7-0317-4b0a-864f-ad31f8c1644f" independed="False">
+        <DataSource id="3">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Пиломатериалы.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="длина&#xA;м" id="4f21399b-1a9e-4b39-8764-eac23d3dc229" independed="False">
+        <DataSource id="4">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Пиломатериалы.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Кол-во, шт" id="fbed04f5-86ba-4170-a6f0-69b7c1c7378d" independed="False">
+        <DataSource id="5">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Пиломатериалы.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Обьем, м3" id="4c9df109-7ded-4dea-b7bf-d4cc1e5c9d9b" independed="False">
+        <DataSource id="6">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Пиломатериалы.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Сорт" id="ff7f36ba-bd76-43d3-a661-6fa08ce5bc55" independed="False">
+        <DataSource id="7">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Пиломатериалы.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Пакет" id="07e7bee5-995d-4a31-a084-248544a57195" independed="False">
+        <DataSource id="8">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Пиломатериалы.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Порода" id="1c80f5e1-9f32-4428-ac9d-1ba08dea8ec5" independed="False">
+        <DataSource id="9">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Пиломатериалы.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+    </Rule>
+    <Rule name="A2" id="6ef64c28-f25b-48f6-9df5-c010f632ef14" independed="True">
+      <DataSource id="D:\chip\Mail.Cloud\Common\Invoice\Пиломатериалы.xlsx[Инвойс]!A2">
+        <CustomSettings />
+        <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Пиломатериалы.xlsx" />
+      </DataSource>
+      <GroupBy>False</GroupBy>
+      <Sum>False</Sum>
+      <OrderBy>False</OrderBy>
+      <OrderByDesc>False</OrderByDesc>
+    </Rule>
+  </Rules>
+  <BindingLayout>
+    <Document module="Declarant.clsXMLConverterService" id="dlaj">
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS">
+        <RulesRow>
+          <RuleGuid>9f057ffa-7ebd-42b1-931e-c8a0c00c179f</RuleGuid>
+        </RulesRow>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31_11">
+        <RuleGuid>6ef64c28-f25b-48f6-9df5-c010f632ef14</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31_17">
+        <RuleGuid>ff7f36ba-bd76-43d3-a661-6fa08ce5bc55</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31_19">
+        <RuleGuid>1c80f5e1-9f32-4428-ac9d-1ba08dea8ec5</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31HEIGHT">
+        <RuleGuid>412fa305-b738-44e1-be4b-e4a1a92bd72c</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31LENGTH">
+        <RuleGuid>4f21399b-1a9e-4b39-8764-eac23d3dc229</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31VOLFACT">
+        <RuleGuid>436ab71c-2159-45b6-aaa5-2843b77c8f96</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31WIDTH">
+        <RuleGuid>aac5a3b7-0317-4b0a-864f-ad31f8c1644f</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G32">
+        <RuleGuid>fd19c038-2be7-46db-a124-1067d9a67ee8</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G32G">
+        <RuleGuid>85164d99-bd14-47bd-a9d4-89897152691a</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/KOLVO">
+        <RuleGuid>4c9df109-7ded-4dea-b7bf-d4cc1e5c9d9b</RuleGuid>
+      </BoundTo>
+    </Document>
+  </BindingLayout>
+</Transformation>

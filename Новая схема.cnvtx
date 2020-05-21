@@ -1,0 +1,738 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Transformation version="1.10">
+  <Rules hideUnbinded="True">
+    <Rule name="Данные о товаре" id="f0a9cbf8-d11b-4648-92cb-43d3253e7e95" independed="True">
+      <DataSource id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx[Данные]!A1:AN2">
+        <CustomSettings>
+          <EOFCriteria>EndOfData</EOFCriteria>
+<FirstRecordIsHeader>true</FirstRecordIsHeader>
+<FirstRecordValues>
+  <Value>Номер товара</Value>
+  <Value>№ группы товаров</Value>
+  <Value>Описание группы</Value>
+  <Value>Наименование фирмы-изготовителя</Value>
+  <Value>Товарный знак, объект АП, ...</Value>
+  <Value>Место происхождения</Value>
+  <Value>Марка</Value>
+  <Value>Модель</Value>
+  <Value>Артикул</Value>
+  <Value>Стандарт (ГОСТ, ОСТ, СПП, СТО, ТУ)</Value>
+  <Value>Сорт/Группа сортов</Value>
+  <Value>Наименование сортимента (для тов. поз. 4403)</Value>
+  <Value>Порода древесины</Value>
+  <Value>Размер: длина</Value>
+  <Value>Размер: ширина</Value>
+  <Value>Размер: высота</Value>
+  <Value>Припуск по длине</Value>
+  <Value>Припуск по ширине</Value>
+  <Value>Припуск по высоте</Value>
+  <Value>Отклонение по длине</Value>
+  <Value>Отклонение по ширине</Value>
+  <Value>Отклонение по высоте</Value>
+  <Value>Диаметр: мин.</Value>
+  <Value>Диаметр: макс.</Value>
+  <Value>Размеры: код ед. изм.</Value>
+  <Value>Размеры: наим. ед. изм.</Value>
+  <Value>Объем по контракту, м3</Value>
+  <Value>Объем факт., м3</Value>
+  <Value>Дата выпуска</Value>
+  <Value>Серийные номера (перечислить через запятую)</Value>
+  <Value>Количество</Value>
+  <Value>Кол-во: Код ед. изм.</Value>
+  <Value>Кол-во: Наим. ед. изм.</Value>
+  <Value>Цена за ед. товара, USD</Value>
+  <Value>Цена/стоимость товарной позиции, USD</Value>
+  <Value>Вес брутто, кг</Value>
+  <Value>Вес нетто, кг</Value>
+  <Value>Свободный текст</Value>
+  <Value>Разрешительный документ №1 из гр.44</Value>
+  <Value>Разрешительный документ №2 из гр.44</Value>
+</FirstRecordValues>
+<RecordsNumberToTransfer>1</RecordsNumberToTransfer>
+<ExcelRangeCustomSettings>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfInt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;int&gt;3&lt;/int&gt;
+  &lt;int&gt;4&lt;/int&gt;
+  &lt;int&gt;5&lt;/int&gt;
+  &lt;int&gt;6&lt;/int&gt;
+  &lt;int&gt;7&lt;/int&gt;
+  &lt;int&gt;8&lt;/int&gt;
+  &lt;int&gt;9&lt;/int&gt;
+  &lt;int&gt;10&lt;/int&gt;
+  &lt;int&gt;11&lt;/int&gt;
+  &lt;int&gt;12&lt;/int&gt;
+  &lt;int&gt;13&lt;/int&gt;
+  &lt;int&gt;14&lt;/int&gt;
+  &lt;int&gt;15&lt;/int&gt;
+  &lt;int&gt;16&lt;/int&gt;
+  &lt;int&gt;17&lt;/int&gt;
+  &lt;int&gt;18&lt;/int&gt;
+  &lt;int&gt;19&lt;/int&gt;
+  &lt;int&gt;20&lt;/int&gt;
+  &lt;int&gt;21&lt;/int&gt;
+  &lt;int&gt;22&lt;/int&gt;
+  &lt;int&gt;23&lt;/int&gt;
+  &lt;int&gt;24&lt;/int&gt;
+  &lt;int&gt;25&lt;/int&gt;
+  &lt;int&gt;26&lt;/int&gt;
+  &lt;int&gt;27&lt;/int&gt;
+  &lt;int&gt;28&lt;/int&gt;
+  &lt;int&gt;29&lt;/int&gt;
+  &lt;int&gt;30&lt;/int&gt;
+  &lt;int&gt;31&lt;/int&gt;
+  &lt;int&gt;32&lt;/int&gt;
+  &lt;int&gt;33&lt;/int&gt;
+  &lt;int&gt;34&lt;/int&gt;
+  &lt;int&gt;35&lt;/int&gt;
+  &lt;int&gt;36&lt;/int&gt;
+  &lt;int&gt;37&lt;/int&gt;
+  &lt;int&gt;38&lt;/int&gt;
+  &lt;int&gt;39&lt;/int&gt;
+&lt;/ArrayOfInt&gt;</ExcelRangeCustomSettings>
+</CustomSettings>
+        <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+      </DataSource>
+      <Rule name="Номер строки" id="43aeb4de-1295-4989-8a49-f42f23bcb842" independed="False">
+        <DataSource id="rowNumber">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="№ группы товаров" id="f2e46a3b-f6a9-4d64-8068-66b426932a95" independed="False">
+        <DataSource id="1">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Описание группы" id="6c14a257-e7f9-4b95-8cf3-18237bf1815b" independed="False">
+        <DataSource id="2">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Наименование фирмы-изготовителя" id="48950283-4fdb-42e5-bd99-86338116ae97" independed="False">
+        <DataSource id="3">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Товарный знак, объект АП, ..." id="1f2998f0-0ef9-49b6-9329-fe406a7ed9aa" independed="False">
+        <DataSource id="4">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Место происхождения" id="e36ada7c-b73a-470a-b1ca-11263fc23ecc" independed="False">
+        <DataSource id="5">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Марка" id="de6d2422-bf5f-4a46-911a-4cc0cd6e444e" independed="False">
+        <DataSource id="6">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Модель" id="072972ca-f7e4-49df-ace9-4d0a3a37eba3" independed="False">
+        <DataSource id="7">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Артикул" id="52bd863e-e0df-43ff-ac37-c405df9440b0" independed="False">
+        <DataSource id="8">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Стандарт (ГОСТ, ОСТ, СПП, СТО, ТУ)" id="d84771d8-932d-47ac-b2c8-ab020164fcc8" independed="False">
+        <DataSource id="9">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Сорт/Группа сортов" id="db0d4c8d-b2b4-4fb0-aca2-82b93bec2029" independed="False">
+        <DataSource id="10">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Наименование сортимента (для тов. поз. 4403)" id="5264e1f6-dbc2-4d15-851c-cf44d7ebb716" independed="False">
+        <DataSource id="11">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Порода древесины" id="be820854-2f44-41ae-9dca-52f72acc608d" independed="False">
+        <DataSource id="12">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Размер: длина" id="6e30abb3-f82b-4a64-8651-093c8c3eb9ff" independed="False">
+        <DataSource id="13">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Размер: ширина" id="5ecd967c-0c53-452a-a9c9-09a86df348e7" independed="False">
+        <DataSource id="14">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Размер: высота" id="8a4eb1a8-629a-48e9-930c-094e04d8f4ae" independed="False">
+        <DataSource id="15">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Припуск по длине" id="f1a58353-ae37-433b-b16e-e35f6a5d9adf" independed="False">
+        <DataSource id="16">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Припуск по ширине" id="8dc3644b-ec0b-4e1e-b42d-f46b119c1efb" independed="False">
+        <DataSource id="17">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Припуск по высоте" id="77c4b7a4-f9de-4829-b36a-b828317294a9" independed="False">
+        <DataSource id="18">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Отклонение по длине" id="a1622271-134f-494f-8a4b-5fda096acc93" independed="False">
+        <DataSource id="19">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Отклонение по ширине" id="878621c2-889a-4237-807a-9cb752252ba0" independed="False">
+        <DataSource id="20">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Отклонение по высоте" id="d151985b-f4e9-460b-a01e-4e4d30193a5b" independed="False">
+        <DataSource id="21">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Диаметр: мин." id="19923ecc-c956-461f-a011-2b39868d417c" independed="False">
+        <DataSource id="22">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Диаметр: макс." id="8bcb083d-a071-4285-bb67-98e84ba7bbf0" independed="False">
+        <DataSource id="23">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Размеры: код ед. изм." id="4593f346-4695-4535-885a-95d37147b142" independed="False">
+        <DataSource id="24">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Размеры: наим. ед. изм." id="bad32aef-d823-42af-91cf-ac47d99467bb" independed="False">
+        <DataSource id="25">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Объем по контракту, м3" id="db04d9d6-581a-47e2-b1df-3fc06f43190d" independed="False">
+        <DataSource id="26">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Объем факт., м3" id="bff6774f-71bd-4270-a61a-0d0b97993090" independed="False">
+        <DataSource id="27">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Дата выпуска" id="d8ef390b-cd13-4b92-91ae-015f773ffc05" independed="False">
+        <DataSource id="28">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Серийные номера (перечислить через запятую)" id="8f593a75-f4f6-4f58-9507-433ed0d0329a" independed="False">
+        <DataSource id="29">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Количество" id="aefd4db9-6e97-40b8-af42-668771e494f5" independed="False">
+        <DataSource id="30">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Кол-во: Код ед. изм." id="1909f4d8-091b-4eb4-84d4-9cf5070ae484" independed="False">
+        <DataSource id="31">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Кол-во: Наим. ед. изм." id="120b3538-6e79-4951-b986-19f89663e1c5" independed="False">
+        <DataSource id="32">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Цена за ед. товара, USD" id="45e9fd07-a66f-4acf-a42b-efd858f7cea2" independed="False">
+        <DataSource id="33">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Цена/стоимость товарной позиции, USD" id="04ae092b-ac75-40e3-b052-4b017e76206e" independed="False">
+        <DataSource id="34">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Вес брутто, кг" id="8924bc55-c514-40fd-8e89-f1f279ef0762" independed="False">
+        <DataSource id="35">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Вес нетто, кг" id="80d6c3d8-1ed4-4ff2-bf3c-2d2d016f31d4" independed="False">
+        <DataSource id="36">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Свободный текст" id="fe804e72-812e-4e29-b4e3-2046356debf1" independed="False">
+        <DataSource id="37">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Разрешительный документ №1 из гр.44" id="eb17072d-b09d-425f-be93-013b3276b859" independed="False">
+        <DataSource id="38">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Номер товара" id="e810d8d8-af62-4bb8-aa12-e0e44f63724c" independed="False">
+        <DataSource id="0">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Разрешительный документ №2 из гр.44" id="ee33547f-f583-4c40-914d-fecf303beccf" independed="False">
+        <DataSource id="39">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+    </Rule>
+    <Rule name="Направление" id="b1e5bbcc-70fd-4d09-8f5e-9dfd20bb1ba1" independed="True">
+      <DataSource id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx[Шапка]!A1:B2">
+        <CustomSettings>
+          <EOFCriteria>EndOfRange</EOFCriteria>
+<FirstRecordIsHeader>true</FirstRecordIsHeader>
+<FirstRecordValues>
+  <Value>Направление</Value>
+  <Value>Код</Value>
+</FirstRecordValues>
+<RecordsNumberToTransfer>1</RecordsNumberToTransfer>
+<ExcelRangeCustomSettings>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfInt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;1&lt;/int&gt;
+&lt;/ArrayOfInt&gt;</ExcelRangeCustomSettings>
+</CustomSettings>
+        <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+      </DataSource>
+      <Rule name="Номер строки" id="7dc43df9-2eb9-4010-9083-4392c913bd37" independed="False">
+        <DataSource id="rowNumber">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Направление" id="a782caea-d95e-4be1-845a-244de821d7be" independed="False">
+        <DataSource id="0">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Код" id="68ab4585-c8da-4a9c-95e2-55ab44cad074" independed="False">
+        <DataSource id="1">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+    </Rule>
+    <Rule name="Отправитель" id="2e470791-8ebc-4373-a85c-3f59f268641a" independed="True">
+      <DataSource id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx[Шапка]!A4:E5">
+        <CustomSettings>
+          <EOFCriteria>EndOfData</EOFCriteria>
+<FirstRecordIsHeader>true</FirstRecordIsHeader>
+<FirstRecordValues>
+  <Value>Отправитель </Value>
+  <Value>Адрес</Value>
+  <Value>ИНН</Value>
+  <Value>КПП</Value>
+  <Value>ОГРН</Value>
+</FirstRecordValues>
+<RecordsNumberToTransfer>1</RecordsNumberToTransfer>
+<ExcelRangeCustomSettings>&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfInt xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;int&gt;0&lt;/int&gt;
+  &lt;int&gt;1&lt;/int&gt;
+  &lt;int&gt;2&lt;/int&gt;
+  &lt;int&gt;3&lt;/int&gt;
+  &lt;int&gt;4&lt;/int&gt;
+&lt;/ArrayOfInt&gt;</ExcelRangeCustomSettings>
+</CustomSettings>
+        <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+      </DataSource>
+      <Rule name="Номер строки" id="c31970bd-fc61-4162-a299-cc93d3716e32" independed="False">
+        <DataSource id="rowNumber">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Отправитель " id="18d48e75-7c62-4fad-8f2e-b10a241dc076" independed="False">
+        <DataSource id="0">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="Адрес" id="e3920215-5ef4-4c1b-bda0-234547c3614c" independed="False">
+        <DataSource id="1">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="ИНН" id="6b9f8fcb-2fa0-4aa9-8390-ace7e232c84e" independed="False">
+        <DataSource id="2">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="КПП" id="708a55d8-5d9a-4332-baba-6790eb815f4d" independed="False">
+        <DataSource id="3">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+      <Rule name="ОГРН" id="7b5e17a6-694d-462f-8e74-5160a28dcc98" independed="False">
+        <DataSource id="4">
+          <Document module="Excel" id="D:\chip\Mail.Cloud\Common\Invoice\Invoice 4407.xlsx" />
+        </DataSource>
+        <GroupBy>False</GroupBy>
+        <Sum>False</Sum>
+        <OrderBy>False</OrderBy>
+        <OrderByDesc>False</OrderByDesc>
+      </Rule>
+    </Rule>
+  </Rules>
+  <BindingLayout>
+    <Document module="Declarant.clsXMLConverterService" id="dlaj">
+      <BoundTo id="/DECLPRIM">
+        <RulesRow>
+          <RuleGuid>b1e5bbcc-70fd-4d09-8f5e-9dfd20bb1ba1</RuleGuid>
+          <RuleGuid>2e470791-8ebc-4373-a85c-3f59f268641a</RuleGuid>
+        </RulesRow>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/G011">
+        <RuleGuid>a782caea-d95e-4be1-845a-244de821d7be</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/G012">
+        <RuleGuid>68ab4585-c8da-4a9c-95e2-55ab44cad074</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/G021">
+        <RuleGuid>6b9f8fcb-2fa0-4aa9-8390-ace7e232c84e</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/G021N">
+        <RuleGuid>7b5e17a6-694d-462f-8e74-5160a28dcc98</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/G022">
+        <RuleGuid>18d48e75-7c62-4fad-8f2e-b10a241dc076</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/G023">
+        <RuleGuid>e3920215-5ef4-4c1b-bda0-234547c3614c</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/G027">
+        <RuleGuid>708a55d8-5d9a-4332-baba-6790eb815f4d</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS">
+        <RulesRow>
+          <RuleGuid>f0a9cbf8-d11b-4648-92cb-43d3253e7e95</RuleGuid>
+        </RulesRow>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/ADDINFO">
+        <RuleGuid>6c14a257-e7f9-4b95-8cf3-18237bf1815b</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/CODE_EDI">
+        <RuleGuid>1909f4d8-091b-4eb4-84d4-9cf5070ae484</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/COMMENT">
+        <RuleGuid>fe804e72-812e-4e29-b4e3-2046356debf1</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31_11">
+        <RuleGuid>48950283-4fdb-42e5-bd99-86338116ae97</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31_12">
+        <RuleGuid>1f2998f0-0ef9-49b6-9329-fe406a7ed9aa</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31_14">
+        <RuleGuid>de6d2422-bf5f-4a46-911a-4cc0cd6e444e</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31_14_2">
+        <RuleGuid>072972ca-f7e4-49df-ace9-4d0a3a37eba3</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31_15">
+        <RuleGuid>52bd863e-e0df-43ff-ac37-c405df9440b0</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31_16">
+        <RuleGuid>d84771d8-932d-47ac-b2c8-ab020164fcc8</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31_17">
+        <RuleGuid>db0d4c8d-b2b4-4fb0-aca2-82b93bec2029</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31_18">
+        <RuleGuid>5264e1f6-dbc2-4d15-851c-cf44d7ebb716</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31_19">
+        <RuleGuid>be820854-2f44-41ae-9dca-52f72acc608d</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31ALLOWANCEHEIGHT">
+        <RuleGuid>77c4b7a4-f9de-4829-b36a-b828317294a9</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31ALLOWANCELENGTH">
+        <RuleGuid>f1a58353-ae37-433b-b16e-e35f6a5d9adf</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31ALLOWANCEWIDTH">
+        <RuleGuid>8dc3644b-ec0b-4e1e-b42d-f46b119c1efb</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31DEVHEIGHT">
+        <RuleGuid>d151985b-f4e9-460b-a01e-4e4d30193a5b</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31DEVLENGTH">
+        <RuleGuid>a1622271-134f-494f-8a4b-5fda096acc93</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31DEVWIDTH">
+        <RuleGuid>878621c2-889a-4237-807a-9cb752252ba0</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31HEIGHT">
+        <RuleGuid>8a4eb1a8-629a-48e9-930c-094e04d8f4ae</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31LENGTH">
+        <RuleGuid>6e30abb3-f82b-4a64-8651-093c8c3eb9ff</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31PRODUCTIONPLACE">
+        <RuleGuid>e36ada7c-b73a-470a-b1ca-11263fc23ecc</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31SIZEUNITSCODE">
+        <RuleGuid>4593f346-4695-4535-885a-95d37147b142</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31SIZEUNITSNAME">
+        <RuleGuid>bad32aef-d823-42af-91cf-ac47d99467bb</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31VOLCONTR">
+        <RuleGuid>db04d9d6-581a-47e2-b1df-3fc06f43190d</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31VOLFACT">
+        <RuleGuid>bff6774f-71bd-4270-a61a-0d0b97993090</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G31WIDTH">
+        <RuleGuid>5ecd967c-0c53-452a-a9c9-09a86df348e7</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G32">
+        <RuleGuid>e810d8d8-af62-4bb8-aa12-e0e44f63724c</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G32G">
+        <RuleGuid>f2e46a3b-f6a9-4d64-8068-66b426932a95</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G35">
+        <RuleGuid>8924bc55-c514-40fd-8e89-f1f279ef0762</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G38">
+        <RuleGuid>80d6c3d8-1ed4-4ff2-bf3c-2d2d016f31d4</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G42PERUNIT">
+        <RuleGuid>45e9fd07-a66f-4acf-a42b-efd858f7cea2</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/G42PRICE">
+        <RuleGuid>04ae092b-ac75-40e3-b052-4b017e76206e</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/ISSUEDATE">
+        <RuleGuid>d8ef390b-cd13-4b92-91ae-015f773ffc05</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/KOLVO">
+        <RuleGuid>aefd4db9-6e97-40b8-af42-668771e494f5</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/NAME_EDI">
+        <RuleGuid>120b3538-6e79-4951-b986-19f89663e1c5</RuleGuid>
+      </BoundTo>
+      <BoundTo id="/DECLPRIM/DECLDOP/GTD31GROUPS/PERMITS1">
+        <RuleGuid>eb17072d-b09d-425f-be93-013b3276b859</RuleGuid>
+      </BoundTo>
+    </Document>
+  </BindingLayout>
+</Transformation>
